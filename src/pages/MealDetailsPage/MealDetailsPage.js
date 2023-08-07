@@ -14,7 +14,7 @@ function MealDetailsPage() {
 
     useEffect(() => {
        startFetchSingleMeal(dispatch, id);
-    }, [dispatch, id]);
+    }, [id]);
 
     let ingredientsArr = [], measureArr = [], singleMeal = {};
     if(meal && meal?.length > 0){
